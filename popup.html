@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>NotebookLM Queue</h1>
+    <div class="status" id="status">Checking tab…</div>
+  </div>
+
+  <textarea id="input" placeholder="Add a prompt. Separate multiple with a blank line or ---"></textarea>
+  <div class="row">
+    <button id="addBtn" class="primary">Add</button>
+    <button id="sampleBtn" class="secondary">Sample</button>
+    <button id="clearBtn" class="danger">Clear all</button>
+  </div>
+
+  <div class="controls">
+    <button id="startBtn" class="big">▶ Start queue</button>
+    <button id="stopBtn" class="big stop" style="display:none">⏹ Stop</button>
+  </div>
+
+  <div class="stats" id="stats">No prompts queued.</div>
+  <div class="list" id="list"></div>
+
+  <div class="footer">
+    <details>
+      <summary>Settings & help</summary>
+      <div class="settings">
+        <label>Delay between prompts (sec)
+          <input type="number" id="delaySec" min="0" max="60" value="3">
+        </label>
+        <label>Max wait per prompt (min)
+          <input type="number" id="maxWaitMin" min="1" max="30" value="10">
+        </label>
+        <p class="help">
+          1. Open a NotebookLM notebook in another tab<br>
+          2. Add prompts above<br>
+          3. Click "Start queue", then switch to the NotebookLM tab<br>
+          4. The extension submits each prompt, waits for it to finish, then sends the next<br>
+          <br>
+          If submission fails, NotebookLM may have updated its UI — see GitHub for selector updates.
+        </p>
+      </div>
+    </details>
+  </div>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
