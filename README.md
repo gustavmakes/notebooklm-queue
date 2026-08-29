@@ -1,3 +1,5 @@
+# DEPRECATED. GOOGLE IS IMPLEMENTING THIS IN NOTEBOOK SEPTEMBER 2 2026 (https://blog.google/innovation-and-ai/products/gemini-notebook/new-flexible-usage-limits/)
+
 # NotebookLM Prompt Queue
 
 A small Chrome extension that queues up prompts for [NotebookLM](https://notebooklm.google.com) and auto-submits them one after the other. Send 20 prompts before your morning coffee, come back to 20 answers.
