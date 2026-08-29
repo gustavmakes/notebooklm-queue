@@ -1,4 +1,5 @@
-# DEPRECATED. GOOGLE IS IMPLEMENTING THIS IN NOTEBOOK SEPTEMBER 2 2026 (https://blog.google/innovation-and-ai/products/gemini-notebook/new-flexible-usage-limits/)
+# DEPRECATED
+GOOGLE IS IMPLEMENTING THIS IN NOTEBOOK SEPTEMBER 2 2026 https://blog.google/innovation-and-ai/products/gemini-notebook/new-flexible-usage-limits/
 
 # NotebookLM Prompt Queue
 
